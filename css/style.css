@@ -1,0 +1,251 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/charity.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-bar {
+  width: 100%;
+  top: 0;
+  height: 70px;
+  position: fixed;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  background-color: white;
+  z-index: 1;
+}
+
+.logo-panel {
+  background-color: white;
+  flex: 30%;
+}
+
+.nav-panel {
+  flex: 70%;
+  background-color: #227CF2;
+  transform: translateX(20%) skew(-10deg);
+}
+
+.nav-link {
+  list-style: none;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+}
+.nav-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.nav-link a:hover {
+  border-bottom: 5px solid #F2B33D;
+}
+
+.hero-text {
+  position: relative;
+  top: 50%;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: white;
+  flex-wrap: wrap;
+}
+.hero-text h1 {
+  text-align: justify;
+  font-size: 2.5em;
+  margin: 0;
+}
+.hero-text button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #227CF2;
+  padding: 20px;
+  font-size: 20px;
+}
+.hero-text button:hover {
+  background-color: white;
+  transition: background-color 1s linear;
+  color: #227CF2;
+}
+.hero-text p {
+  font-size: 25px;
+  line-height: 10px;
+  font-weight: bold;
+}
+
+.about-section {
+  background-color: rgb(252, 248, 248);
+  display: flex;
+  flex-direction: row;
+}
+
+.about {
+  height: inherit;
+  /*  background-image: linear-gradient(rgba(10, 34, 245, 0.952), rgba(10, 34, 245, 0.541)), url("../images/charity2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+  background-color: #227CF2;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  min-width: 100px;
+  align-items: center;
+}
+.about h1 {
+  color: white;
+}
+.about span {
+  border: 1px 1px 1px 1px solid transparent;
+  border-radius: 5px;
+  background-color: #F2B33D;
+  color: white;
+  padding: 10px;
+}
+.about p {
+  color: white;
+  font-size: 16px;
+  line-height: 32px;
+}
+.about a {
+  text-decoration: none;
+  border: 1px 1px 1px 1px solid transparent;
+  border-radius: 5px;
+  color: #227CF2;
+  padding: 10px;
+  background-color: white;
+}
+.about a:hover {
+  padding: 15px;
+  transition: padding 1s linear;
+}
+
+.fa-arrow-right {
+  color: #227CF2;
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.about-list span {
+  border: 1px 1px 1px 1px solid transparent;
+  border-radius: 5px;
+  background-color: #F2B33D;
+  color: white;
+  padding: 6px;
+  text-align: center;
+  overflow: hidden;
+}
+.about-list h1 {
+  text-align: center;
+  color: #227CF2;
+  font-size: 2.5em;
+}
+
+.about-item {
+  margin-right: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 300px [col-start]);
+  margin-left: 20px;
+  column-gap: 20px;
+  text-align: center;
+}
+
+.fa-solid {
+  color: #227CF2;
+  font-size: 4rem;
+}
+
+.section-2 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.section-2 h1 {
+  text-align: center;
+  color: #227CF2;
+  font-size: 2.5em;
+}
+
+.course {
+  display: grid;
+  grid-template-columns: repeat(3, 320px [col-start]);
+  grid-gap: 30px;
+}
+
+.item-card {
+  box-shadow: 1;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 8px 12px 8px #f0f0f0;
+  border-bottom: 4px solid #227CF2;
+}
+
+.img-box {
+  width: inherit;
+}
+.img-box img {
+  height: 200px;
+  width: 100%;
+}
+
+.text-area {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.text-area h2 {
+  text-align: center;
+  color: #227CF2;
+}
+.text-area a {
+  text-decoration: none;
+  padding: 12px 8px 12px 8px;
+  font-size: 16px;
+  color: white;
+  background-color: #227CF2;
+  border-radius: 8px;
+}
+.text-area i {
+  color: white;
+}
+.text-area a:hover {
+  background-color: #F2B33D;
+  transition: background-color 1s linear;
+  color: white;
+}
+
+.value {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.value h1 {
+  color: #227CF2;
+  font-size: 2.5em;
+  text-align: justify;
+}
+
+.value-table {
+  border-collapse: collapse;
+}
+.value-table th {
+  padding: 8px 24px;
+  font-size: 16px;
+  border-bottom: 4px solid #227CF2;
+}
+.value-table th:hover {
+  background-color: #227CF2;
+  color: #f0f0f0;
+}
+
+/*# sourceMappingURL=style.css.map */
